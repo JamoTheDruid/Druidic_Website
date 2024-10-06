@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="foundation.css">
+    <link rel="stylesheet" href="fonts.css" type="text/css">
+  </head>  
+  <body onload="pickRandomImage()">
+    <div class="full-page">
+      <div class="layer-one-left">
+
+        <a class="layer-two first" href="index.html">
+          <img src="./images/Logo.png" alt="Druidic" class="homepageLink">
+        </a>
+
+        <div class="layer-two welcome-text">
+          We're glad you're here<br>Login to see your environment
+        </div>
+
+        <form class="layer-two form" action="./dashboard.html">
+
+          <div class="form-group">
+            <label class="form-label" for="user">Phone or Email Address</label>
+            <input class="form-text-input" type="text" id="user" name="" placeholder="Phone or Email Address"></input>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="pass">Password</label>
+            <input class="form-text-input" type="password" id="pass" name="" placeholder="Password"></input>
+          </div>
+
+          <div class="">
+            <input class="form-checkbox" type="checkbox" id="rememberMe">
+            <label class="form-label" for="rememberMe">Remember me</label>
+          </div>
+
+          <input class="form-group form-submit" type="submit" value="Sign In"></input>
+          
+          <div class="container">
+            <a class="forgot-password" href="./forgotPassword.html">Forgot Password</a>
+            <a class="new-account" href="./newAccount.html">New Account</a>  
+            
+          </div>
+
+        </form> 
+
+      </div>
+
+      <div class="layer-one-right">
+        <img src="/images/Graphics/Wide.webp" alt="" id="graphic" class="graphic">  
+      </div>
+
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>

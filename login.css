@@ -1,0 +1,164 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font-size:1vw;
+}
+
+.full-page {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 35% 65%;
+
+}
+
+/* Grid Layer One - First Column */
+
+.layer-one-left {
+  max-height: 100vh;
+}
+
+
+/* First Column Grid Items */
+
+.layer-two {
+
+}
+
+.homepageLink {
+  display: inline;
+  width: 50%;
+  padding: 2em 2em 2em; /* top, right, bottom, left */
+}
+
+.welcome-text {
+  font-family: "Raleway";
+  font-weight: 500;
+  font-size: 2em;
+  line-height: 1.4em;
+  color: rgb(121, 121, 121);
+  padding: 5em 2em 0 2em;
+}
+
+.form {
+  font-family: "Raleway";
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: 1em;
+  padding: 2em 2em 2em 4em; /* top, right, bottom, left */
+}
+
+.form-group {
+  display: grid;
+  grid-template-rows: auto;
+  row-gap: .6em;
+  width: 67%;
+}
+
+.form-labels {
+  font-size: 2em;
+}
+
+.form-text-input {
+  border-style: solid;
+  border-color: rgba(182, 182, 182, 0.432);
+  border-radius: 0.5em;
+  border-width: 0.2em;
+
+  height: 3em;
+}
+
+input[type=text] {
+  padding-left: 1em;
+}
+
+input[type=password] {
+  padding-left: 1em;
+}
+
+.form-text-input::placeholder {
+  color: rgba(182, 182, 182, 0.432);
+}
+
+.form-submit {
+  font-family: "Raleway";
+  font-size: 1.2em;
+  color: rgba(94, 94, 94, 0.699);
+  border-style: solid;
+  border-color: rgba(182, 182, 182, 0.637);
+  border-radius: 0.25em;
+  border-width: 0.1em;
+  padding: 0.2em;
+  transition: 0.3s
+}
+
+.form-submit:hover {
+  color: rgba(189, 122, 255, 1);
+  border-color: rgb(177, 98, 255);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(78, 78, 78);
+  transition: 0.3s
+  }
+
+a:hover {
+    color: rgb(189, 122, 255);
+  }
+
+
+/* Grid Layer One - Second Column */
+
+.layer-one-right {
+  height: 100vh;
+}
+
+.container {
+  width: 67%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.forgot-password {
+
+}
+
+.new-account {
+  align-items: end;
+}
+
+.graphic {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  overflow: clip;
+}
+
+
+
+/* ============================================================================= */
+
+
+
+@media only screen and (min-width: 1200px) {
+
+}
+
+@media only screen and (min-width: 992px) {
+/* adjust full page columns to 50% 50% */
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+  .homepageLink {
+    width: 50%;
+  }
+  /* adjust full page columns to rows */
+}
